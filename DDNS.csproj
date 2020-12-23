@@ -1,0 +1,13 @@
+<Project>
+  <PropertyGroup>
+    <BaseIntermediateOutputPath>$(TEMP)\$(SolutionName)\$(MSBuildProjectName)\obj</BaseIntermediateOutputPath>
+    <BaseOutputPath>$(TEMP)\$(SolutionName)\$(MSBuildProjectName)\bin</BaseOutputPath>
+  </PropertyGroup>
+  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <OutDir>$(TEMP)\$(SolutionName)\$(Configuration)\$(TargetFramework)</OutDir>
+  </PropertyGroup>
+  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+</Project>
